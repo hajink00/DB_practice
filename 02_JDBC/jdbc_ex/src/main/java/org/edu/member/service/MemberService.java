@@ -89,6 +89,7 @@ public class MemberService {
         System.out.print("권한 : ");
         String memberRole = sc.next();
 
+
         // Member 객체 생성 후 전달
         Member member = new Member();
         member.setMemberId(memberId);

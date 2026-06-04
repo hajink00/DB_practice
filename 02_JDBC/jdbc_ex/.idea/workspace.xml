@@ -18,13 +18,16 @@
       <change afterPath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/ch12_stream/exam2_delay_operation/DelayOperation.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/ch12_stream/exam3_optional/OptionalExample1.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/ch12_stream/exam3_optional/OptionalExample2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01_MySQL/수업자료/오전수업/jdbc_ex/src/main/java/org/scoula/jdbc_ex/common/JDBCUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../03_VueJS/02_advanced/06_단일파일컴포넌트/todolist-app-practice" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_VueJS/02_advanced/06_단일파일컴포넌트/todolist-app-practice" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/ch09_collection_generic/advanced/ch15/sec02/exam01/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/ch09_collection_generic/advanced/ch15/sec02/exam01/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/ch10_collection/practice/model/service/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/ch10_collection/practice/model/service/MainService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/ch10_collection/practice/model/vo/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/ch10_collection/practice/model/vo/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/out/production/main/main/java/ch10_collection/practice/model/service/MainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/out/production/main/main/java/ch10_collection/practice/model/service/MainService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/out/production/main/main/java/ch10_collection/practice/model/vo/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_Java/study/src/main/java/out/production/main/main/java/ch10_collection/practice/model/vo/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/edu/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/edu/member/service/MemberService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
     </system>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -134,7 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780551079883</updated>
       <workItem from="1780551080952" duration="164000" />
-      <workItem from="1780551273352" duration="9309000" />
+      <workItem from="1780551273352" duration="10302000" />
     </task>
     <servers />
   </component>

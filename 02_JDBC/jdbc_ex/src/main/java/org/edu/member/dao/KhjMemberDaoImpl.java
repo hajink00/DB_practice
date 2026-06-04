@@ -35,7 +35,7 @@ public class KhjMemberDaoImpl implements MemberDao {
         // -> 오타 위험 감소, 가독성 상승
 
         // sql문 작성 시 세미콜론(;)은 안쓰는 것이 관례
-        String sql = "INSERT INTO members VALUES (DEFAULT, ?, ?, ?, ?, 'N')";
+        String sql = "INSERT INTO members VALUES (DEFAULT, ?, ?, ?, ?, ?, 'N')";
 
 
         // try-with-resources문을 사용하여 작업이 끝나면 pstmt.close()가 자동 호출됨
