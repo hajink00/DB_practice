@@ -152,10 +152,13 @@ public class MemberService {
 
         System.out.println("삭제할 회원 번호 : ");
         int no = sc.nextInt();
+        if(dao.get(no) != null){
+            dao.delete(no);
 
-        dao.delete(no);
-        if(dao.get(no) == null) System.out.println("회원 정보 삭제 성공");
-        else System.out.println("회원 정보 삭제 실패 ㅠㅠ");
+            if(dao.get(no) == null) System.out.println("회원 정보 삭제 성공");
+            else System.out.println("회원 정보 삭제 실패 ㅠㅠ");
+        } else System.out.println("일치하는 회원이 없습니다");
+
     }
 
     // 회원 1명 조회

@@ -44,7 +44,7 @@ public class KhjMemberDaoImpl implements MemberDao {
             pstmt.setString(2, member.getMemberPw());
             pstmt.setString(3, member.getMemberName());
             pstmt.setString(4, member.getMemberRole());
-
+            pstmt.setString(5, member.getMemberDeptNo());
             // SELECT : executeQuery(); -> ResultSet 반환
             // DML    : executeUpdate(); -> 성공한 행의 개수 반환
             int result = pstmt.executeUpdate();
