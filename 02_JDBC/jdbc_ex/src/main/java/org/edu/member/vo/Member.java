@@ -15,6 +15,7 @@ public class Member {
     private String memberPw;
     private String memberName;
     private String memberRole;
+    private String memberDeptNo;
     private char deletedYn;
 
     // 부서

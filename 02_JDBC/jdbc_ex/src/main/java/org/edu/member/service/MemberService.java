@@ -43,16 +43,16 @@ public class MemberService {
                         create();
                         break;
                     case 2:
-                        // getList();
+                        getList();
                         break;
                     case 3:
-                        // get();
+                        get();
                         break;
                     case 4:
                         update();
                         break;
                     case 5:
-                        // delete();
+                        delete();
                         break;
                     case 6:
                         getDeptName();
@@ -89,6 +89,9 @@ public class MemberService {
         System.out.print("권한 : ");
         String memberRole = sc.next();
 
+        System.out.print("부서번호 : ");
+        String memberDeptNo = sc.next();
+
 
         // Member 객체 생성 후 전달
         Member member = new Member();
@@ -96,6 +99,7 @@ public class MemberService {
         member.setMemberPw(memberPw);
         member.setMemberName(memberName);
         member.setMemberRole(memberRole);
+        member.setMemberDeptNo(memberDeptNo);
 
         int result = dao.create(member);
 
@@ -110,12 +114,7 @@ public class MemberService {
 
     }
 
-    private void delete() throws SQLException{
-        System.out.println("=== 회원 삭제 ===");
 
-        System.out.println("삭제할 회원 번호 : ");
-        int no = sc.nextInt();
-    }
 
     // 회원 정보 수정
     private void update() throws SQLException {
@@ -146,6 +145,44 @@ public class MemberService {
     // delete()  : 회원 번호가 일치하는 회원 삭제
     // get()     : 회원 번호가 일치하는 회원 한명 조회
     // getList() : 회원 목록 전체 조회
+
+    // 회원 삭제
+    private void delete() throws SQLException{
+        System.out.println("=== 회원 삭제 ===");
+
+        System.out.println("삭제할 회원 번호 : ");
+        int no = sc.nextInt();
+
+        dao.delete(no);
+        if(dao.get(no) == null) System.out.println("회원 정보 삭제 성공");
+        else System.out.println("회원 정보 삭제 실패 ㅠㅠ");
+    }
+
+    // 회원 1명 조회
+    private void get() throws SQLException {
+        System.out.println("=== 회원 번호 조회 ===");
+
+        System.out.println("검색할 회원 번호 : ");
+        int no = sc.nextInt();
+
+        Member member = dao.get(no);
+
+        if(member == null){
+            System.out.println("일치하는 회원이 없습니다.");
+        } else {
+            System.out.println(member);
+        }
+    }
+
+    // 전체 목록 조회
+    private void getList() throws SQLException {
+        System.out.println("=== 회원 목록 조회 ===");
+
+        System.out.println(dao.getList());
+
+    }
+
+
 
     // 회원번호가 일치하는 회원의 번호, 이름, 부서코드, 부서명 조회
     private void getDeptName() throws SQLException {

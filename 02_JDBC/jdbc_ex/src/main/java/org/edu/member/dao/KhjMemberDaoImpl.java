@@ -101,7 +101,7 @@ public class KhjMemberDaoImpl implements MemberDao {
                     mem.setMemberNo(rs.getInt("no"));
                     mem.setMemberId(rs.getString("id"));
                     mem.setMemberName(rs.getString("name"));
-                    mem.setMemberPw(rs.getString("pw"));
+                    // mem.setMemberPw(rs.getString("pw"));
                     mem.setMemberRole(rs.getString("role"));
                     return mem;
                 }
@@ -113,19 +113,21 @@ public class KhjMemberDaoImpl implements MemberDao {
     // 회원 목록 조회
     @Override
     public List<Member> getList() throws SQLException {
-        String sql = "SELECT * FROM members"; // 테이블명 통일 필요
+
+        String sql = "SELECT * FROM members";
         List<Member> userList = new ArrayList<>();
+
         try (PreparedStatement pstmt = conn.prepareStatement(sql);
              ResultSet rs = pstmt.executeQuery()) {
 
-            // 첫 번째부터 바로 루프 수행
             while (rs.next()) {
                 Member mem = new Member();
                 mem.setMemberNo(rs.getInt("no"));
                 mem.setMemberId(rs.getString("id"));
-                mem.setMemberPw(rs.getString("pw"));
+                // mem.setMemberPw(rs.getString("pw"));
                 mem.setMemberName(rs.getString("name"));
                 mem.setMemberRole(rs.getString("role"));
+                // deleted_yn 컬럼이 존재한다면 추가
                 userList.add(mem);
             }
         }
