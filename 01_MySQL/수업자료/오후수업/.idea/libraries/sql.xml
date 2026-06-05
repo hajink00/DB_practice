@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="오후수업sql">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/오후수업sql.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
